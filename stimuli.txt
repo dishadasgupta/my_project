@@ -1,0 +1,1144 @@
+# epset 4 cancel_strong
+While working in the veterinary clinic, I closely examined the mouth of large bulldog.
+Some of the dog's teeth were missing.
+In fact, they all were because its owners completely neglected its oral hygiene.
+? Was there a dog in the veterinary clinic? Y
+
+# epset 4 cancel_weak
+While working in the veterinary clinic, I caught a glimpse of a large bulldog.
+Some of the dog's teeth were missing.
+In fact, they all were because its owners completely neglected its oral hygiene.
+? Was there a dog in the veterinary clinic? Y
+
+# epset 4 anaphor_strong
+While working in the veterinary clinic, I closely examined the mouth of large bulldog.
+Some of the dog's teeth were missing.
+The rest were intact so it should still be able to eat solid food.
+? Was there a dog in the veterinary clinic? Y
+
+# epset 4 anaphor_weak
+While working in the veterinary clinic, I caught a glimpse of a large bulldog.
+Some of the dog's teeth were missing.
+The rest were intact so it should still be able to eat solid food.
+? Was there a dog in the veterinary clinic? Y
+
+# epset 4 literal_strong
+While working in the veterinary clinic, I closely examined the mouth of large bulldog.
+Only some of the dog's teeth were missing.
+The rest were intact so it should still be able to eat solid food.
+? Was there a dog in the veterinary clinic? Y
+
+# epset 4 literal_weak
+While working in the veterinary clinic, I caught a glimpse of a large bulldog.
+Only some of the dog's teeth were missing.
+The rest were intact so it should still be able to eat solid food.
+? Was there a dog in the veterinary clinic? Y
+
+# epset 5 cancel_strong
+When they returned, I reviewed each of the receipts for my family's trip to Europe.
+Some of their hotels were expensive.
+In fact, they all were because my family loves luxurious holidays.
+? Did my parents save money by entirely avoiding expensive hotels? N
+
+# epset 5 cancel_weak
+When they returned, my family told me about their trip to Europe.
+Some of their hotels were expensive.
+In fact, they all were because my family loves luxurious holidays.
+? Did my parents save money by entirely avoiding expensive hotels? N
+
+# epset 5 anaphor_strong
+When they returned, I reviewed each of the receipts for my family's trip to Europe.
+Some of their hotels were expensive.
+The rest were cheap despite my family's love for luxurious holidays.
+? Did my parents save money by entirely avoiding expensive hotels? N
+
+# epset 5 anaphor_weak
+When they returned, my family told me about their trip to Europe.
+Some of their hotels were expensive.
+The rest were cheap despite my family's love for luxurious holidays.
+? Did my parents save money by entirely avoiding expensive hotels? N
+
+# epset 5 literal_strong
+When they returned, I reviewed each of the receipts for my family's trip to Europe.
+Only some of their hotels were expensive.
+The rest were cheap despite my family's love for luxurious holidays.
+? Did my parents save money by entirely avoiding expensive hotels? N
+
+# epset 5 literal_weak
+When they returned, my family told me about their trip to Europe.
+Only some of their hotels were expensive.
+The rest were cheap despite my family's love for luxurious holidays.
+? Did my parents save money by entirely avoiding expensive hotels? N
+
+# epset 6 cancel_strong
+To make sure the company didn't receive fraudulent merchandise, I carefully inspected the new shipment of jewelry.
+Some of the gold watches were fakes.
+In fact, they all were, so the company is planning to sue.
+? Were all of the gold watches genuine? N
+
+# epset 6 cancel_weak
+As part of my job, I helped unload the new shipment of jewelry.
+Some of the gold watches were fakes.
+In fact, they all were, so the company is planning to sue.
+? Were all of the gold watches genuine? N
+
+# epset 6 anaphor_strong
+To make sure the company didn't receive fraudulent merchandise, I carefully inspected the new shipment of jewelry.
+Some of the gold watches were fakes.
+The rest were real, but the company is still planning to sue.
+? Were all of the gold watches genuine? N
+
+# epset 6 anaphor_weak
+As part of my job, I helped unload the new shipment of jewelry.
+Some of the gold watches were fakes.
+The rest were real, but the company is still planning to sue.
+? Were all of the gold watches genuine? N
+
+# epset 6 literal_strong
+To make sure the company didn't receive fraudulent merchandise, I carefully inspected the new shipment of jewelry.
+Only some of the gold watches were fakes.
+The rest were real, but the company is still planning to sue.
+? Were all of the gold watches genuine? N
+
+# epset 6 literal_weak
+As part of my job, I helped unload the new shipment of jewelry.
+Only some of the gold watches were fakes.
+The rest were real, but the company is still planning to sue.
+? Were all of the gold watches genuine? N
+
+# epset 7 cancel_strong
+Last week, I tasted every dish at a family potluck.
+Some of the dishes were spicy.
+In fact, they all were but fortunately I love spicy food.
+? Did anyone in my family cook spicy food last week? Y
+
+# epset 7 cancel_weak
+Last week, I attended a family potluck.
+Some of the dishes were spicy.
+In fact, they all were but fortunately I love spicy food.
+? Did anyone in my family cook spicy food last week? Y
+
+# epset 7 anaphor_strong
+Last week, I tasted every dish at a family potluck.
+Some of the dishes were spicy.
+The rest were mild and I found them to be bland.
+? Did anyone in my family cook spicy food last week? Y
+
+# epset 7 anaphor_weak
+Last week, I attended a family potluck.
+Some of the dishes were spicy.
+The rest were mild and I found them to be bland.
+? Did anyone in my family cook spicy food last week? Y
+
+# epset 7 literal_strong
+Last week, I tasted every dish at a family potluck.
+Only some of the dishes were spicy.
+The rest were mild and I found them to be bland.
+? Did anyone in my family cook spicy food last week? Y
+
+# epset 7 literal_weak
+Last week, I attended a family potluck.
+Only some of the dishes were spicy.
+The rest were mild and I found them to be bland.
+? Did anyone in my family cook spicy food last week? Y
+
+# epset 8 cancel_strong
+Before the hurricane landed, I checked every house in town.
+Some of the residents had evacuated.
+In fact, they all did and, as a result, they survived the storm.
+? Was it dangerous for the residents to stay in town? Y
+
+# epset 8 cancel_weak
+Before the hurricane landed, I volunteered to help out in town.
+Some of the residents had evacuated.
+In fact, they all did and, as a result, they survived the storm.
+? Was it dangerous for the residents to stay in town? Y
+
+# epset 8 anaphor_strong
+Before the hurricane landed, I checked every house in town.
+Some of the residents had evacuated.
+The rest stayed at home and foolishly risked their lives.
+? Was it dangerous for the residents to stay in town? Y
+
+# epset 8 anaphor_weak
+Before the hurricane landed, I volunteered to help out in town.
+Some of the residents had evacuated.
+The rest stayed at home and foolishly risked their lives.
+? Was it dangerous for the residents to stay in town? Y
+
+# epset 8 literal_strong
+Before the hurricane landed, I checked every house in town.
+Only some of the residents had evacuated.
+The rest stayed at home and foolishly risked their lives.
+? Was it dangerous for the residents to stay in town? Y
+
+# epset 8 literal_weak
+Before the hurricane landed, I volunteered to help out in town.
+Only some of the residents had evacuated.
+The rest stayed at home and foolishly risked their lives.
+? Was it dangerous for the residents to stay in town? Y
+
+# epset 9 cancel_strong
+As the office's main technician, I had to check each computer for the dangerous new virus.
+Some of our computers were infected.
+In fact, they all were and the virus nearly destroyed the whole system.
+? Were my office's computers safe from damaging software? N
+
+# epset 9 cancel_weak
+As the office's main technician, I had been alerted to the dangerous new virus.
+Some of our computers were infected.
+In fact, they all were and the virus nearly destroyed the whole system.
+? Were my office's computers safe from damaging software? N
+
+# epset 9 anaphor_strong
+As the office's main technician, I had to check each computer for the dangerous new virus.
+Some of our computers were infected.
+The rest were clean because their owners had been very cautious.
+? Were my office's computers safe from damaging software? N
+
+# epset 9 anaphor_weak
+As the office's main technician, I had been alerted to the dangerous new virus.
+Some of our computers were infected.
+The rest were clean because their owners had been very cautious.
+? Were my office's computers safe from damaging software? N
+
+# epset 9 literal_strong
+As the office's main technician, I had to check each computer for the dangerous new virus.
+Only some of our computers were infected.
+The rest were clean because their owners had been very cautious.
+? Were my office's computers safe from damaging software? N
+
+# epset 9 literal_weak
+As the office's main technician, I had been alerted to the dangerous new virus.
+Only some of our computers were infected.
+The rest were clean because their owners had been very cautious.
+? Were my office's computers safe from damaging software? N
+
+# epset 10 cancel_strong
+This morning, I took attendance at an important meeting with the manager.
+Some of the company's accountants were there.
+In fact, they all were in order to communicate how budget cutbacks were crippling their division.
+? Did the manager have a meeting with any of the accountants? Y
+
+# epset 10 cancel_weak
+This morning, I heard about at an important meeting with the manager.
+Some of the company's accountants were there.
+In fact, they all were in order to communicate how budget cutbacks were crippling their division.
+? Did the manager have a meeting with any of the accountants? Y
+
+# epset 10 anaphor_strong
+This morning, I took attendance at an important meeting with the manager.
+Some of the company's accountants were there.
+The rest were missing because they had to audit the company's finances before the end of the quarter.
+? Did the manager have a meeting with any of the accountants? Y
+
+# epset 10 anaphor_weak
+This morning, I heard about at an important meeting with the manager.
+Some of the company's accountants were there.
+The rest were missing because they had to audit the company's finances before the end of the quarter.
+? Did the manager have a meeting with any of the accountants? Y
+
+# epset 10 literal_strong
+This morning, I took attendance at an important meeting with the manager.
+Only some of the company's accountants were there.
+The rest were missing because they had to audit the company's finances before the end of the quarter.
+? Did the manager have a meeting with any of the accountants? Y
+
+# epset 10 literal_weak
+This morning, I heard about at an important meeting with the manager.
+Only some of the company's accountants were there.
+The rest were missing because they had to audit the company's finances before the end of the quarter.
+? Did the manager have a meeting with any of the accountants? Y
+
+# epset 11 cancel_strong
+Earlier today, I was leading a small group of tourists around the sights downtown.
+Some of tourists got soaked by the rain storm.
+In fact, they all did because they had forgotten their umbrellas.
+? Did it rain earlier today? Y
+
+# epset 11 cancel_weak
+Earlier today, I passed by a group of tourists looking at sights downtown.
+Some of tourists got soaked by the rain storm.
+In fact, they all did because they had forgotten their umbrellas.
+? Did it rain earlier today? Y
+
+# epset 11 anaphor_strong
+Earlier today, I was leading a small group of tourists around the sights downtown.
+Some of tourists got soaked by the rain storm.
+The rest were dry because they had remembered their umbrellas.
+? Did it rain earlier today? Y
+
+# epset 11 anaphor_weak
+Earlier today, I passed by a group of tourists looking at sights downtown.
+Some of tourists got soaked by the rain storm.
+The rest were dry because they had remembered their umbrellas.
+? Did it rain earlier today? Y
+
+# epset 11 literal_strong
+Earlier today, I was leading a small group of tourists around the sights downtown.
+Only some of tourists got soaked by the rain storm.
+The rest were dry because they had remembered their umbrellas.
+? Did it rain earlier today? Y
+
+# epset 11 literal_weak
+Earlier today, I passed by a group of tourists looking at sights downtown.
+Only some of tourists got soaked by the rain storm.
+The rest were dry because they had remembered their umbrellas.
+? Did it rain earlier today? Y
+
+# epset 12 cancel_strong
+After the furniture sale, I catalogued all the merchandise in the store.
+Some of the leather couches had been sold.
+In fact, they all had since they were stylish and cheap.
+? Had the store sold out all of its leather couches before the furniture sale? N
+
+# epset 12 cancel_weak
+After the furniture sale, I closed down and locked up the store.
+Some of the leather couches had been sold.
+In fact, they all had since they were stylish and cheap.
+? Had the store sold out all of its leather couches before the furniture sale? N
+
+# epset 12 anaphor_strong
+After the furniture sale, I catalogued all the merchandise in the store.
+Some of the leather couches had been sold.
+The rest were going to be stored in the warehouse until the following season.
+? Had the store sold out all of its leather couches before the furniture sale? N
+
+# epset 12 anaphor_weak
+After the furniture sale, I closed down and locked up the store.
+Some of the leather couches had been sold.
+The rest were going to be stored in the warehouse until the following season.
+? Had the store sold out all of its leather couches before the furniture sale? N
+
+# epset 12 literal_strong
+After the furniture sale, I catalogued all the merchandise in the store.
+Only some of the leather couches had been sold.
+The rest were going to be stored in the warehouse until the following season.
+? Had the store sold out all of its leather couches before the furniture sale? N
+
+# epset 12 literal_weak
+After the furniture sale, I closed down and locked up the store.
+Only some of the leather couches had been sold.
+The rest were going to be stored in the warehouse until the following season.
+? Had the store sold out all of its leather couches before the furniture sale? N
+
+
+# epset 13 cancel_strong
+In the school parking lot, I carefully inspected an old bus.
+Some of its tires were flat.
+In fact, they all were so the cost to repair it would be enormous.
+? Was there a school bus sitting in the parking lot? Y
+
+# epset 13 cancel_weak
+In the school parking lot, I passed by an old bus.
+Some of its tires were flat.
+In fact, they all were so the cost to repair it would be enormous.
+? Was there a school bus sitting in the parking lot? Y
+
+# epset 13 anaphor_strong
+In the school parking lot, I carefully inspected an old bus.
+Some of its tires were flat.
+The others were fine so it would not cost too much to fix it.
+? Was there a school bus sitting in the parking lot? Y
+
+# epset 13 anaphor_weak
+In the school parking lot, I passed by an old bus.
+Some of its tires were flat.
+The others were fine so it would not cost too much to fix it.
+? Was there a school bus sitting in the parking lot? Y
+
+# epset 13 literal_strong
+In the school parking lot, I carefully inspected an old bus.
+Only some of its tires were flat.
+The others were fine so it would not cost too much to fix it.
+? Was there a school bus sitting in the parking lot? Y
+
+# epset 13 literal_weak
+In the school parking lot, I passed by an old bus.
+Only some of its tires were flat.
+The others were fine so it would not cost too much to fix it.
+? Was there a school bus sitting in the parking lot? Y
+
+
+# epset 14 cancel_strong
+I was the chief medic overseeing the bus accident on the side of the highway.
+Some of the passengers were still alive.
+In fact, they all were and none were critically injured.
+? Was the bus empty during the accident? N
+
+# epset 14 cancel_weak
+I stopped to see if I could help with the bus accident on the side of the highway.
+Some of the passengers were still alive.
+In fact, they all were and none were critically injured.
+? Was the bus empty during the accident? N
+
+# epset 14 anaphor_strong
+I was the chief medic overseeing the bus accident on the side of the highway.
+Some of the passengers were still alive.
+The others were killed on impact and there was no opportunity to save them.
+? Was the bus empty during the accident? N
+
+# epset 14 anaphor_weak
+I stopped to see if I could help with the bus accident on the side of the highway.
+Some of the passengers were still alive.
+The others were killed on impact and there was no opportunity to save them.
+? Was the bus empty during the accident? N
+
+# epset 14 literal_strong
+I was the chief medic overseeing the bus accident on the side of the highway.
+Only some of the passengers were still alive.
+The others were killed on impact and there was no opportunity to save them.
+? Was the bus empty during the accident? N
+
+# epset 14 literal_weak
+I stopped to see if I could help with the bus accident on the side of the highway.
+Only some of the passengers were still alive.
+The others were killed on impact and there was no opportunity to save them.
+? Was the bus empty during the accident? N
+
+
+# epset 15 cancel_strong
+At my client's request, I meticulously compiled the investment report.
+Some of the real-estate investments lost money.
+In fact, they all did because of the recent economic downturn.
+? Did my client have real-estate investments? Y
+
+# epset 15 cancel_weak
+At my client's request, I skimmed the investment report.
+Some of the real-estate investments lost money.
+In fact, they all did because of the recent economic downturn.
+? Did my client have real-estate investments? Y
+
+# epset 15 anaphor_strong
+At my client's request, I meticulously compiled the investment report.
+Some of the real-estate investments lost money.
+The others were successful in spite of the recent economic downturn.
+? Did my client have real-estate investments? Y
+
+# epset 15 anaphor_weak
+At my client's request, I skimmed the investment report.
+Some of the real-estate investments lost money.
+The others were successful in spite of the recent economic downturn.
+? Did my client have real-estate investments? Y
+
+# epset 15 literal_strong
+At my client's request, I meticulously compiled the investment report.
+Only some of the real-estate investments lost money.
+The others were successful in spite of the recent economic downturn.
+? Did my client have real-estate investments? Y
+
+# epset 15 literal_weak
+At my client's request, I skimmed the investment report.
+Only some of the real-estate investments lost money.
+The others were successful in spite of the recent economic downturn.
+? Did my client have real-estate investments? Y
+
+
+# epset 16 cancel_strong
+After the babysitter left, I carefully examined my liquor collection.
+Some of my new bottles of peach schnapps were opened.
+In fact, they all were but I decided not to call her parents because it was so hard to find a babysitter.
+? Was the babysitter smoking pot instead of looking after my children? N
+
+# epset 16 cancel_weak
+After the babysitter left, I went to my liquor collection and made a drink.
+Some of my new bottles of peach schnapps were opened.
+In fact, they all were but I decided not to call her parents because it was so hard to find a babysitter.
+? Was the babysitter smoking pot instead of looking after my children? N
+
+# epset 16 anaphor_strong
+After the babysitter left, I carefully examined my liquor collection.
+Some of my new bottles of peach schnapps were opened.
+The others were untouched, but I was still concerned and decided to call her parents.
+? Was the babysitter smoking pot instead of looking after my children? N
+
+# epset 16 anaphor_weak
+After the babysitter left, I went to my liquor collection and made a drink.
+Some of my new bottles of peach schnapps were opened.
+The others were untouched, but I was still concerned and decided to call her parents.
+? Was the babysitter smoking pot instead of looking after my children? N
+
+# epset 16 literal_strong
+After the babysitter left, I carefully examined my liquor collection.
+Only some of my new bottles of peach schnapps were opened.
+The others were untouched, but I was still concerned and decided to call her parents.
+? Was the babysitter smoking pot instead of looking after my children? N
+
+# epset 16 literal_weak
+After the babysitter left, I went to my liquor collection and made a drink.
+Only some of my new bottles of peach schnapps were opened.
+The others were untouched, but I was still concerned and decided to call her parents.
+? Was the babysitter smoking pot instead of looking after my children? N
+
+
+# epset 17 cancel_strong
+I examined the damage after I dropped a bowling ball down the stairs.
+Some of the steps were damaged.
+In fact, they all were so they will require extensive repairs.
+? Did the bowling ball leave any of the steps undamaged? N
+
+# epset 17 cancel_weak
+I heard that my friend dropped a bowling ball down the stairs.
+Some of the steps were damaged.
+In fact, they all were so they will require extensive repairs.
+? Did the bowling ball leave any of the steps undamaged? N
+
+# epset 17 anaphor_strong
+I examined the damage after I dropped a bowling ball down the stairs.
+Some of the steps were damaged.
+The others were fine so the repairs shouldn't be too expensive.
+? Did the bowling ball leave any of the steps undamaged? N
+
+# epset 17 anaphor_weak
+I heard that my friend dropped a bowling ball down the stairs.
+Some of the steps were damaged.
+The others were fine so the repairs shouldn't be too expensive.
+? Did the bowling ball leave any of the steps undamaged? N
+
+# epset 17 literal_strong
+I examined the damage after I dropped a bowling ball down the stairs.
+Only some of the steps were damaged.
+The others were fine so the repairs shouldn't be too expensive.
+? Did the bowling ball leave any of the steps undamaged? N
+
+# epset 17 literal_weak
+I heard that my friend dropped a bowling ball down the stairs.
+Only some of the steps were damaged.
+The others were fine so the repairs shouldn't be too expensive.
+? Did the bowling ball leave any of the steps undamaged? N
+
+
+# epset 18 cancel_strong
+At a friend's suggestion, I completely worked through an entire math textbook.
+Some of its problems were difficult.
+In fact, they all were but I feel like I learned a lot.
+? Did the math textbook have problems for readers to solve? Y
+
+# epset 18 cancel_weak
+At a friend's suggestion, I read a review of a new math textbook.
+Some of its problems were difficult.
+In fact, they all were but it received a positive review anyway.
+? Did the math textbook have problems for readers to solve? Y
+
+# epset 18 anaphor_strong
+At a friend's suggestion, I completely worked through an entire math textbook.
+Some of its problems were difficult.
+The others were straightforward and I feel like I learned a lot.
+? Did the math textbook have problems for readers to solve? Y
+
+# epset 18 anaphor_weak
+At a friend's suggestion, I read a review of a new math textbook.
+Some of its problems were difficult.
+The others were straightforward and the reviewer liked the balance.
+? Did the math textbook have problems for readers to solve? Y
+
+# epset 18 literal_strong
+At a friend's suggestion, I completely worked through an entire math textbook.
+Only some of its problems were difficult.
+The others were straightforward and I feel like I learned a lot.
+? Did the math textbook have problems for readers to solve? Y
+
+# epset 18 literal_weak
+At a friend's suggestion, I read a review of a new math textbook.
+Only some of its problems were difficult.
+The others were straightforward and the reviewer liked the balance.
+? Did the math textbook have problems for readers to solve? Y
+
+
+# epset 19 cancel_strong
+To keep the laboratory well stocked, I write down exactly how much of the chemicals are used every night.
+Today, some of the liquid nitrogen containers needed to be refilled.
+In fact, they all did which confused me because we hadn't used a lot this morning.
+? Are there liquid nitrogen containers in the laboratory? Y
+
+# epset 19 cancel_weak
+To keep the laboratory well stocked, I occasionally look at which chemicals are being used.
+Today, some of the liquid nitrogen containers needed to be refilled.
+In fact, they all did which confused me because we hadn't used a lot this morning.
+? Are there liquid nitrogen containers in the laboratory? Y
+
+# epset 19 anaphor_strong
+To keep the laboratory well stocked, I write down exactly how much of the chemicals are used every night.
+Today, some of the liquid nitrogen containers needed to be refilled.
+The others were normal but I decided to order more anyway.
+? Are there liquid nitrogen containers in the laboratory? Y
+
+# epset 19 anaphor_weak
+To keep the laboratory well stocked, I occasionally look at which chemicals are being used.
+Today, some of the liquid nitrogen containers needed to be refilled.
+The others were normal but I decided to order more anyway.
+? Are there liquid nitrogen containers in the laboratory? Y
+
+# epset 19 literal_strong
+To keep the laboratory well stocked, I write down exactly how much of the chemicals are used every night.
+Today, only some of the liquid nitrogen containers needed to be refilled.
+The others were normal but I decided to order more anyway.
+? Are there liquid nitrogen containers in the laboratory? Y
+
+# epset 19 literal_weak
+To keep the laboratory well stocked, I occasionally look at which chemicals are being used.
+Today, only some of the liquid nitrogen containers needed to be refilled.
+The others were normal but I decided to order more anyway.
+? Are there liquid nitrogen containers in the laboratory? Y
+
+
+# epset 20 cancel_strong
+The PTA picked me to organize every award for the assembly at my daughter's school.
+Some of the honors students received prizes.
+In fact, they all did because the teachers didn't want any of them to feel left out.
+? Were the teachers insensitive to the feelings of the students? N
+
+# epset 20 cancel_weak
+My daughter told me about the awards assembly at her school.
+Some of the honors students received prizes.
+In fact, they all did because the teachers didn't want any of them to feel left out.
+? Were the teachers insensitive to the feelings of the students? N
+
+# epset 20 anaphor_strong
+The PTA picked me to organize every award for the assembly at my daughter's school.
+Some of the honors students received prizes.
+The others were not invited to attend because the teachers didn't want anyone to feel left out.
+? Were the teachers insensitive to the feelings of the students? N
+
+# epset 20 anaphor_weak
+My daughter told me about the awards assembly at her school.
+Some of the honors students received prizes.
+The others were not invited to attend because the teachers didn't want anyone to feel left out.
+? Were the teachers insensitive to the feelings of the students? N
+
+# epset 20 literal_strong
+The PTA picked me to organize every award for the assembly at my daughter's school.
+Only some of the honors students received prizes.
+The others were not invited to attend because the teachers didn't want anyone to feel left out.
+? Were the teachers insensitive to the feelings of the students? N
+
+# epset 20 literal_weak
+My daughter told me about the awards assembly at her school.
+Only some of the honors students received prizes.
+The others were not invited to attend because the teachers didn't want anyone to feel left out.
+? Were the teachers insensitive to the feelings of the students? N
+
+
+# epset 21 cancel_strong
+As the new librarian, it was my responsibility to catalog every book in the reference section.
+Some of the dictionaries were labeled incorrectly.
+In fact, they all were which made my job much more difficult.
+? Did the library's reference section contain dictionaries? Y
+
+# epset 21 cancel_weak
+The librarian told me about how annoying it was to reorganize the reference section.
+Some of the dictionaries were labeled incorrectly.
+In fact, they all were which made his job much more difficult.
+? Did the library's reference section contain dictionaries? Y
+
+# epset 21 anaphor_strong
+As the new librarian, it was my responsibility to catalog every book in the reference section.
+Some of the dictionaries were labeled incorrectly.
+The others were labeled appropriately though a few of them had been shelved in the wrong place.
+? Did the library's reference section contain dictionaries? Y
+
+# epset 21 anaphor_weak
+The librarian told me about how annoying it was to reorganize the reference section.
+Some of the dictionaries were labeled incorrectly.
+The others were labeled appropriately though a few of them had been shelved in the wrong place.
+? Did the library's reference section contain dictionaries? Y
+
+# epset 21 literal_strong
+As the new librarian, it was my responsibility to catalog every book in the reference section.
+Only some of the dictionaries were labeled incorrectly.
+The others were labeled appropriately though a few of them had been shelved in the wrong place.
+? Did the library's reference section contain dictionaries? Y
+
+# epset 21 literal_weak
+The librarian told me about how annoying it was to reorganize the reference section.
+Only some of the dictionaries were labeled incorrectly.
+The others were labeled appropriately though a few of them had been shelved in the wrong place.
+? Did the library's reference section contain dictionaries? Y
+
+
+# epset 22 cancel_strong
+I am a huge fan of my old high_school football team and attended every game last season.
+Some of their losses were close.
+In fact, they all were which made the games stressful to watch.
+? Did my high_school football team win every game? N
+
+# epset 22 cancel_weak
+I ran into a friend who started telling how my old high_school football team did last season.
+Some of their losses were close.
+In fact, they all were which made the games stressful to watch.
+? Did my high_school football team win every game? N
+
+# epset 22 anaphor_strong
+I am a huge fan of my old high_school football team and attended every game last season.
+Some of their losses were close.
+The others were blowouts which made the games boring to watch.
+? Did my high_school football team win every game? N
+
+# epset 22 anaphor_weak
+I ran into a friend who started telling how my old high_school football team did last season.
+Some of their losses were close.
+The others were blowouts which made the games boring to watch.
+? Did my high_school football team win every game? N
+
+# epset 22 literal_strong
+I am a huge fan of my old high_school football team and attended every game last season.
+Only some of their losses were close.
+The others were blowouts which made the games boring to watch.
+? Did my high_school football team win every game? N
+
+# epset 22 literal_weak
+I ran into a friend who started telling how my old high_school football team did last season.
+Only some of their losses were close.
+The others were blowouts which made the games boring to watch.
+? Did my high_school football team win every game? N
+
+
+# epset 23 cancel_strong
+To prepare for my Spanish test, I spent hours studying the new vocabulary items.
+Some of the words were regular verbs.
+In fact, they all were which made the test fairly simple.
+? Was I studying for a French language test? N
+
+# epset 23 cancel_weak
+I had little time to prepare for my Spanish test so I quickly glanced at the new vocabulary items.
+Some of the words were regular verbs.
+In fact, they all were which made the test fairly simple.
+? Was I studying for a French language test? N
+
+# epset 23 anaphor_strong
+To prepare for my Spanish test, I spent hours studying the new vocabulary items.
+Some of the words were regular verbs.
+The others were irregular verbs which made the test challenging.
+? Was I studying for a French language test? N
+
+# epset 23 anaphor_weak
+I had little time to prepare for my Spanish test so I quickly glanced at the new vocabulary items.
+Some of the words were regular verbs.
+The others were irregular verbs which made the test challenging.
+? Was I studying for a French language test? N
+
+# epset 23 literal_strong
+To prepare for my Spanish test, I spent hours studying the new vocabulary items.
+Only some of the words were regular verbs.
+The others were irregular verbs which made the test challenging.
+? Was I studying for a French language test? N
+
+# epset 23 literal_weak
+I had little time to prepare for my Spanish test so I quickly glanced at the new vocabulary items.
+Only some of the words were regular verbs.
+The others were irregular verbs which made the test challenging.
+? Was I studying for a French language test? N
+
+
+# epset 24 cancel_strong
+While eating breakfast, I had lots of time to pore over the stock prices from yesterday.
+Some of my stocks went up.
+In fact, they all did but my portfolio was still down for the year.
+? Has my portfolio lost value this year? Y
+
+# epset 24 cancel_weak
+While eating breakfast, I had little time to skim the stock prices from yesterday.
+Some of my stocks went up.
+In fact, they all did but my portfolio was still down for the year.
+? Has my portfolio lost value this year? Y
+
+# epset 24 anaphor_strong
+While eating breakfast, I had lots of time to pore over the stock prices from yesterday.
+Some of my stocks went up.
+The others were relatively steady but my portfolio was still down for the year.
+? Has my portfolio lost value this year? Y
+
+# epset 24 anaphor_weak
+While eating breakfast, I had little time to skim the stock prices from yesterday.
+Some of my stocks went up.
+The others were relatively steady but my portfolio was still down for the year.
+? Has my portfolio lost value this year? Y
+
+# epset 24 literal_strong
+While eating breakfast, I had lots of time to pore over the stock prices from yesterday.
+Only some of my stocks went up.
+The others were relatively steady but my portfolio was still down for the year.
+? Has my portfolio lost value this year? Y
+
+# epset 24 literal_weak
+While eating breakfast, I had little time to skim the stock prices from yesterday.
+Only some of my stocks went up.
+The others were relatively steady but my portfolio was still down for the year.
+? Has my portfolio lost value this year? Y
+
+
+# filler 1 -
+I drove to the mall yesterday.
+I stayed in the Apple store for one hour while looking at a new iMac before stopping at JC Penny's on the way home.
+? Did the Apple store have a recently released computer? Y
+
+# filler 2 -
+Tonight I will watch my favorite television show.
+It is about people who travel through time in a telephone box.
+They have a robot dog.
+? Is the television show about aliens? N
+
+# filler 3 -
+Everyone knows that M*A*S*H took place during the Korean War.
+I just realized that Alan Alda played Hawkeye Pierce, a doctor on the television show M*A*S*H.
+It's one of my favorite shows so I'm embarrassed that I did not know the lead actor.
+? Did I realize that M*A*S*H took place in Asia? Y
+
+# filler 4 -
+I read fantasy novels every week.
+I enjoy Terry Pratchett's novels especially.
+His stories are funny and sarcastic.
+? Does Terry Pratchett write fantasy books? Y
+
+# filler 5 -
+Each week I write at least one response paper.
+This week I wrote two.
+One was for psychology and another was for classics.
+? Did I write more papers than usual this week? Y
+
+# filler 6 -
+When I arrived in the parking lot today I saw an expensive red Ferrari.
+When I left for lunch it was gone.
+? Was the Ferrari black? N
+
+# filler 7 -
+After dinner, I listen to Celtic music and read a book.
+Today I listened to classic rock instead of Celtic music.
+? Did I still read a book? Y
+
+# filler 8 -
+I wear my favorite shirt every week.
+I make sure to wash some of my clothes each week.  I always wash my shirts before I wear them again.
+? Do I wash my favorite shirt every week? Y
+
+# filler 9 -
+Yesterday I went to a Led Zeppelin concert.
+I only go to see bands that I really like.  They played for about an hour.
+? Do I like Led Zeppelin? Y
+
+# filler 10 -
+Today the dining hall is serving salmon for dinner.
+I don't like fish.
+If I don't like what is being served, I will eat somewhere else.
+? Will I eat in the dining hall? N
+
+# filler 11 -
+I turned on my computer today to check my email.
+I have been waiting to hear from my mother.
+I had no new email.
+? Did my mother write to me? N
+
+# filler 12 -
+Tomorrow I will go to the dentist to have a cavity filled.
+Everyone knows that flossing prevents cavities, but I haven't flossed enough.
+I will try to brush my teeth more frequently.
+? Does everyone know that brushing teeth prevents cavities? N
+
+# filler 13 -
+Today the United Nations announced in New York City a new plan for world peace.
+I would like to be a United Nations ambassador for the United States but don't want to travel to Europe.
+Luckily, the United Nations is based in New York.
+? Did I realize that New York City is in the United States? Y
+
+# filler 14 -
+Because of the nice weather, I put the top down on my convertible.
+I was afraid of sunburning my head, so I wore a hat.
+? Did my head get sunburned? N
+
+# filler 15 -
+Each member of my family uses a Windows PC.
+I prefer to use an Apple Mac for my laptop.
+Campus computers use Mac almost exclusively.
+? Is it easier to use Mac on campus? Y
+
+# filler 16 -
+I enjoy driving my car when I am home from school.
+Motorcycles use less fuel, but they are more dangerous.
+? Would I rather be more fuel efficient? N
+
+# filler 17 -
+I got sick with a cold over the weekend.
+I am still taking decongestants.
+? Am I well yet? N
+
+# filler 18 -
+Today I declared a major in Psychology.
+I am also interested in a minor in Theatre.
+I cannot do more than one major and minor or two majors.
+? Am I also majoring in Philosophy? N
+
+# filler 19 -
+I love to listen to music.
+I could spend hours just listening to Pink Floyd.
+The radio doesn't play music I like, so I listen to my iPod.
+? Does the radio play Pink Floyd? N
+
+# filler 20 -
+I am a big Star Wars fan.
+I have seen every movie and read every book.
+I can't stand it when they make TV shows out of movies.
+? Have I seen the Star Wars TV show? N
+
+# filler 21 -
+Neil Patrick Harris is my favorite actor.
+Harris stars in my favorite TV show.
+I wish I could meet him.
+? Have I acted with Neil Patrick Harris? N
+
+# filler 22 -
+I can't stand fruit-flavored candy.
+I make exceptions for lemon lollipops and chewy candy, though.
+? Do I like cherry gumdrops? N
+
+# filler 23 -
+There was a thunderstorm today.
+I think that thunderstorms are romantic.
+My professor became annoyed because he could not speak over the thunder.
+? Was I in class during the thunderstorm? Y
+
+# filler 24 -
+I love to play card games with my friends, and we are going to play Hearts tonight.
+We always enjoy playing a game on Sunday evening.
+After a long day of study and rest, cards are the perfect way to relax.
+? Is tonight Sunday? Y
+
+# filler 25 -
+Yesterday, my cat scratched my arm.
+She is normally quite friendly.
+I have had her for the last three years.
+? Was I surprised that the cat scratched my arm? Y
+
+# filler 26 -
+This summer I will not have air conditioning in my house.
+I prefer the weather in Massachusetts, where it is colder.
+New England weather is always colder in the summer.
+? Do I prefer New England weather? Y
+
+# filler 27 -
+I use Post-It Notes to keep track of my homework.
+Sometimes I lose them, but the adhesive helps them stick to my notes.
+? Do I write my assignments in a notebook? N
+
+# filler 28 -
+My headphones broke yesterday.
+I will have to buy new ones from the store when it opens tomorrow.
+I wish stores were open on the weekend.
+? Do I have another pair of headphones? N
+
+# filler 29 -
+Over the weekend I saw a play.
+The student theatre group put it on.
+If the actors could sing it would sound nicer.
+? Is the play a musical? Y
+
+# filler 30 -
+Each weekend I do my laundry.
+I have sports practice each week.
+My uniform gets sweaty and dirty if I wear it only once.
+? Do I wash my sports clothes each week? Y
+
+# filler 31 -
+I have seen a mouse living in my apartment. 
+Yesterday, it ate a bar of chocolate, even though the candy was in a closed plastic container.
+? Did the mouse find a way into the plastic container? Y
+
+# filler 32 -
+Last summer I went to Chicago on vacation.
+When I was there, I visited the Art Institute and saw a painting by Georges Seurat.
+It was much bigger than I thought it would be.
+? Did the painting conform to my expectations? N
+
+# filler 33 -
+My favorite fruit used to be raspberries.
+When I was younger, I saw a bug in one of my raspberries, and I haven't eaten one since.
+? Do I still enjoy raspberries? N
+
+# filler 34 -
+I went to the movie theater last weekend.
+The movie I'd planned on seeing was sold out, so I bought tickets for the next available show.
+To pass the time, I went to the ice cream parlor next door.
+? Did I eat ice cream that evening? Y
+
+# filler 35 -
+My grandparents have a clock that imitates birdcalls.
+Sometimes, when it strikes the hour, I think there is a rare bird nearby.
+? Does the bird clock fool me? Y
+
+# filler 36 -
+I planned to have a picnic in the park.
+The weather forecast predicted rain, so I thought I would have to cancel it.
+However, the day turned out sunny after all.
+? Did the weather prevent me from having a picnic? N
+
+# filler 37 -
+I enjoy playing board games with my uncle.
+The last time we played together, I thought I had won.
+When we tallied up the scores I discovered that he beat me by one point.
+? Did my uncle beat me by a lot of points? N
+
+# filler 38 -
+In the mornings, I go jogging because that is when I can fit it into my schedule.
+I like exercising then because the weather is cooler than it is during the afternoon.
+Also, the paths are not very crowded.
+? Are there multiple reasons why I prefer to run in the morning? Y
+
+# filler 39 -
+I have often heard that carrots help you see in the dark.
+I once ate an entire bag of carrots and then turned the light off.
+The carrots must have failed, because I couldn't see anything.
+? Did eating carrots give me night vision? N
+
+# filler 40 -
+My friend told me that my favorite band was giving a concert in my hometown.
+I checked their website to see if tickets were still available.
+I even managed to get a discount.
+? Am I planning on going to the concert? Y
+
+# filler 41 -
+I got my hair cut at a salon in town.
+I wanted a trim, but the stylist cut it too short.
+Now my hair looks completely different.
+? Was I satisfied with my haircut? N
+
+# filler 42 -
+I was having a party, so I went to the grocery store to buy food.
+I accidentally dropped a jar of salsa on the floor.
+It splashed all over the pants I was planning to wear at the party.
+? Will I have to change my outfit before the party? Y
+
+# filler 43 -
+I built a new bookshelf for my bedroom.
+It was very difficult to do, because I lost the instructions for putting it together.
+The next day, it fell apart again.
+? Was my bookshelf sturdy? N
+
+# filler 44 -
+My hobby is knitting.
+I have learned to knit really fast, even when I'm thinking of something else.
+Sometimes, I can knit and read at the same time.
+? Does knitting require all of my attention? N
+
+# filler 45 -
+When I was babysitting my cousin, we did an art project.
+We spread newspaper on the floor so it wouldn't get paint on it.
+We still got paint on our clothes, though.
+? Did the newspaper keep the floor clean? Y
+
+# filler 46 -
+I recently redecorated my bedroom.
+I picked out blue paint for my walls.
+When the paint arrived, I discovered that it was a darker blue than the color I wanted.
+? Was I happy with the new color of my walls? N
+
+# filler 47 -
+I planted tomato plants in my backyard.
+By the time the tomatoes became ripe, wild animals had already eaten most of them.
+? Was I able to eat any of the tomatoes I planted? Y
+
+# filler 48 -
+When I was driving to work, my favorite song came on the radio.
+I started to sing along really loudly.
+Afterwards, I realized that my windows had been open and other drivers had been staring at me.
+? While the song was on, was I paying attention to my surroundings? N
+
+# filler 49 -
+The weather was so warm that I decided to do my homework outside.
+I sat beside a fountain that's in the park near my house.
+Suddenly, a loud noise startled me, and I dropped my textbook in the water.
+? Should I have chosen a different place to sit? Y
+
+# filler 50 -
+On Saturday my friends and I played miniature golf.
+I played pretty well, but my scores fluctuated a lot.
+At one hole, my ball got stuck on a windmill, but at the next, I got a hole in one.
+? Did my trouble with the windmill cause me to lose the game? N
+
+# filler 51 -
+For my birthday, my family bought me an ice cream cake.
+The inside of it was mint-chocolate chip, my favorite ice cream flavor.
+The cake also had my name on the top in blue and green icing.
+? Did my family remember my birthday this year? Y
+
+# filler 52 -
+After my brother's wedding, I helped him address the envelopes to his thank-you notes.
+When I finished, my hand was sore from all the writing.
+I was glad I didn't have to write the letters, as well.
+? Was my task a tiring one? Y
+
+# filler 53 -
+I just became vegan, so it's difficult to find restaurants with food I can eat.
+A few blocks from my house, there's a cafe that only serves vegan food.
+When my friends want to eat out, I usually suggest we go there.
+? Have I found many restaurants with vegan dishes? N
+
+# filler 54 -
+I went to the zoo, but my favorite animals were all asleep.
+One of the pandas had sprawled out on a rock.
+I was happy I'd gotten a chance to see it, even though it was sleeping.
+? Were any of the animals sitting out in the open? Y
+
+# filler 55 -
+In the city, I saw a street performer who did magic tricks.
+She picked me as a volunteer for her act, and asked me to knot ropes around her.
+I thought I tied them very tightly, but she still managed to escape.
+? Did my knots effectively trap the performer? N
+
+# filler 56 -
+I took my little sister to the beach.
+The water was too cold to swim in, so we played on land instead.
+We made a sandcastle and then took turns burying each other in the sand.
+? Did we get covered with sand during this trip? Y
+
+# filler 57 -
+When I was driving on the highway, a car nearly crashed into me because it was going too fast.
+Later on, I noticed the same car on the side of the road.
+It looked to me like a police officer was giving the driver a ticket.
+? Did I get into an accident on the highway? N
+
+# filler 58 -
+I lost my cell phone at a theater.
+I looked under all the seats around me, but I didn't see it.
+I couldn't even find it by calling it and listening for the ring, because I had turned it off before the performance.
+? Had my phone rung during the show? N
+
+# filler 59 -
+I was swimming laps in my local pool when I noticed something at the bottom.
+When I dove down, I realized it was a twenty-dollar bill.
+Nobody claimed it when I asked the people nearby, so I kept it.
+? Was I lucky to have noticed the object in the water? Y
+
+# filler 60 -
+I usually let my cat go outside for a couple hours every night.
+Last night, I forgot to let him back in until the next morning.
+The minute I opened the door, he ran inside to his food bowl.
+? Did being locked out all night make my cat hungry? Y
+
+# filler 61 -
+When I talked to my parents yesterday, they told me that they did not pay taxes this year.
+They have decided that all taxation is theft.
+I am worried about their decision, since they might go to prison.
+? Do my parents always obey the law? N
+
+# filler 62 -
+After I got back from my trip to the equator, I started feeling very ill.
+My doctor told me I had contracted a rare tropical disease.
+Luckily, there are drugs which effectively treat it, and I am now healthy.
+? Did I see a doctor after I started feeling ill? Y
+
+# filler 63 -
+My daughter asked me to make brownies for the bake sale at her school.
+At the sale, my brownies sold out during the first hour.
+They were so popular that some of the other parents asked me for the recipe.
+? Did the people at the bake sale think my brownies were disgusting? N
+
+# filler 64
+As the editor of the newspaper, I have to make sure that the paper does not publish anything that is offensive.
+Unfortunately, a disgruntled writer slipped a racial slur into an article last week.
+I issued a long apology on the front page of the paper the next day.
+? Did the writer ask me before inserting the slur into his article? N
+
+#filler 65
+Because of the snow storm, my plane was eight hours late.
+Though I tried to make the best of my time in the airport, there wasn't much for me to do.
+I ended up solving crossword puzzles for most of the time.
+? Did I use my time in the airport productively? N

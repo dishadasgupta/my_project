@@ -1,31 +1,19 @@
-var condition = _.sample(["list1", "list2", "list1_r", "list2_r"])
-
+var condition = "strong"
 
 var trial_counter = 0;
 
 function build_trials() {
-  if (condition == "list1") {
-    return list1;
+  if (condition == "strong") {
+    return strong;
   }
   
-  if (condition == "list2") {
-    return list2;
-  }
-  
-  if (condition == "list1_r") {
-    return list1.reverse();
-  }
-  
-  if (condition == "list2_r") {
-    return list2.reverse();
+  if (condition == "weak") {
+    return weak;
   }
 }
 
-
-
 function make_slides(f) {
   var   slides = {};
-
   slides.i0 = slide({
      name : "i0",
      start: function() {
@@ -45,28 +33,26 @@ function make_slides(f) {
     name: "trial",
     present: exp.train_stims,
     present_handle: function(stim) {
+      stim.words = stim.words.split(" ")
       this.stim = stim;
       this.position = 0;
             
-      $("#comprehension-question").hide();
-      
+      $("#comprehension-question").hide();      
       
       var html = "";
       
       for (var i = 0; i < stim.words.length; i++) {
         var word = stim.words[i];
-        var masked_word = word.form.replace(/./g, "-") + " ";
-        html += "<span data-form=\"" + word.form + " \" data-masked-form=\"" + masked_word + "\"  id=\"stimulus-word-" + i + "\">" +  masked_word + "</span>"
+        var masked_word = word.replace(/./g, "-") + " ";
+        html += "<span data-form=\"" + word + " \" data-masked-form=\"" + masked_word + "\"  id=\"stimulus-word-" + i + "\">" +  masked_word + "</span>"
         if (word.lbr_after) {
           html += "<br>"
         }
       }
       
-      
       this.response_times = [];
       
-      $("#stimulus-sentence").html(html);
-      
+      $("#stimulus-sentence").html(html);      
       
       var t = this;
       
@@ -92,12 +78,6 @@ function make_slides(f) {
       });
       
       $("#comprehension-question-q").text(stim.question);
-      
-      
-      
-     
-     
-     
 
     },
     button : function(response) {
@@ -110,24 +90,22 @@ function make_slides(f) {
       for (var i = 0; i < this.stim.words.length; i++) {
         var word = this.stim.words[i];
         exp.data_trials.push({
-          "trial_id": this.stim.trial_id,
+          "word": word,
           "word_idx": i,
-          "form": word.form,
-          "region": word.region,
-          "lbr_before": word.lbr_before ? 1 : 0,
-          "lbr_after": word.lbr_after ? 1 : 0,
-          "rt": this.response_times[i+1] - this.response_times[i], 
-          "type": this.stim.type,
-          "response_correct": this.response_correct ? 1 : 0,
-          "trial_no": trial_counter
+          "rt": this.response_times[i+1] - this.response_times[i],
+          "response_correct": this.response_correct ? 1 : 0, 
+          "trial_no": trial_counter,
+          "trial_id": this.stim.trial_id,
+          //"form": word.form,
+          //"region": word.region,
+          //"lbr_before": word.lbr_before ? 1 : 0,
+          //"lbr_after": word.lbr_after ? 1 : 0,          
+          //"type": this.stim.type,         
         }); 
       }
       trial_counter++;
     }
   });
-
-  
-
 
   slides.subj_info =  slide({
     name : "subj_info",
