@@ -1,15 +1,42 @@
-var condition = "strong"
+//var condition = "strong"
 
 var trial_counter = 0;
 
+function shuffle(array) {
+    var ctr = array.length, temp, index;
+    while (ctr > 0) {
+        index = Math.floor(Math.random() * ctr);
+        ctr--;
+        temp = array[ctr];
+        array[ctr] = array[index];
+        array[index] = temp;
+    }
+    return array;
+}
+
 function build_trials() {
-  if (condition == "strong") {
-    return strong;
+  combinedList = []
+  trialCond = []
+  shuffleStrong = shuffle(strong)
+  shuffleWeak = shuffle(weak)
+
+  for(var i = 0; i < strong.length; i++) {
+    decider = Math.round(Math.random());
+
+    if (decider == 1) {
+      if (trialCond.includes(shuffleStrong[i]["trial_id"].split("_")[0]) == false) {
+        combinedList.push(shuffleStrong[i]);
+        trialCond.push(shuffleStrong[i]["trial_id"].split("_")[0])
+      }      
+    } else {
+      if (trialCond.includes(shuffleWeak[i]["trial_id"].split("_")[0]) == false) {
+        combinedList.push(shuffleWeak[i]);
+        trialCond.push(shuffleWeak[i]["trial_id"].split("_")[0])
+      }  
+    }
   }
-  
-  if (condition == "weak") {
-    return weak;
-  }
+  console.log(combinedList.length)
+  return combinedList  
 }
 
 function make_slides(f) {
@@ -129,7 +156,7 @@ function make_slides(f) {
           "trials" : exp.data_trials,
           "catch_trials" : exp.catch_trials,
           "system" : exp.system,
-          "condition" : exp.condition,
+          //"condition" : exp.condition,
           "subject_information" : exp.subj_data,
           "time_in_minutes" : (Date.now() - exp.startT)/60000
       };
@@ -142,7 +169,7 @@ function make_slides(f) {
 
 /// init ///
 function init() {
-  exp.condition = condition;
+  //exp.condition = condition;
   exp.trials = [];
   exp.catch_trials = [];
   exp.train_stims = build_trials(); //can randomize between subject conditions here
