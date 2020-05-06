@@ -15,28 +15,28 @@ function shuffle(array) {
 }
 
 function build_trials() {
-  combinedList = []
-  trialCond = []
-  shuffleStrong = shuffle(strong)
-  shuffleWeak = shuffle(weak)
+  combinedList = [];
+  trialCond = [];
+  shuffleStrong = shuffle(strong);
+  shuffleWeak = shuffle(weak);
 
   for(var i = 0; i < strong.length; i++) {
     decider = Math.round(Math.random());
 
     if (decider == 1) {
-      if (trialCond.includes(shuffleStrong[i]["trial_id"].split("_")[0]) == false) {
+      if (trialCond.includes(shuffleStrong[i]["trial_id"].split("_")[0]) === false) {
         combinedList.push(shuffleStrong[i]);
-        trialCond.push(shuffleStrong[i]["trial_id"].split("_")[0])
+        trialCond.push(shuffleStrong[i]["trial_id"].split("_")[0]);
       }      
     } else {
-      if (trialCond.includes(shuffleWeak[i]["trial_id"].split("_")[0]) == false) {
+      if (trialCond.includes(shuffleWeak[i]["trial_id"].split("_")[0]) === false) {
         combinedList.push(shuffleWeak[i]);
-        trialCond.push(shuffleWeak[i]["trial_id"].split("_")[0])
+        trialCond.push(shuffleWeak[i]["trial_id"].split("_")[0]);
       }  
     }
   }
-  console.log(combinedList.length)
-  return combinedList  
+  console.log(combinedList.length);
+  return combinedList; 
 }
 
 function make_slides(f) {
@@ -60,7 +60,7 @@ function make_slides(f) {
     name: "trial",
     present: exp.train_stims,
     present_handle: function(stim) {
-      stim.words = stim.words.split(" ")
+      stim.words = stim.words.split(" ");
       this.stim = stim;
       this.position = 0;
             
@@ -71,9 +71,9 @@ function make_slides(f) {
       for (var i = 0; i < stim.words.length; i++) {
         var word = stim.words[i];
         var masked_word = word.replace(/./g, "-") + " ";
-        html += "<span data-form=\"" + word + " \" data-masked-form=\"" + masked_word + "\"  id=\"stimulus-word-" + i + "\">" +  masked_word + "</span>"
+        html += "<span data-form=\"" + word + " \" data-masked-form=\"" + masked_word + "\"  id=\"stimulus-word-" + i + "\">" +  masked_word + "</span>";
         if (word.lbr_after) {
-          html += "<br>"
+          html += "<br>";
         }
       }
       
