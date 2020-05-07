@@ -35,7 +35,8 @@ function build_trials() {
       }  
     }
   }
-  console.log(combinedList.length);
+  combinedList = combinedList.concat(filler);
+  combinedList = shuffle(combinedList);
   return combinedList; 
 }
 
@@ -170,8 +171,8 @@ function make_slides(f) {
 /// init ///
 function init() {
   //exp.condition = condition;
-  //exp.trials = [];
-  //exp.catch_trials = [];
+  exp.trials = [];
+  exp.catch_trials = [];
   exp.train_stims = build_trials(); //can randomize between subject conditions here
   exp.system = {
       Browser : BrowserDetect.browser,

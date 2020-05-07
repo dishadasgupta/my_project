@@ -870,3 +870,397 @@ weak = [
     "trial_id": "portfolio_lw"
   }
 ]
+
+
+filler = [
+  {
+    "words": "I drove to the mall yesterday. I stayed in the Apple store for one hour while looking at a new iMac before stopping at JC Penny's on the way home.",
+    "question": "Did the Apple store have a recently released computer?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_1"
+  },
+  {
+    "words": "Tonight I will watch my favorite television show. It is about people who travel through time in a telephone box. They have a robot dog.",
+    "question": "Is the television show about aliens?",
+    "correct_answer": "No",
+    "trial_id": "filler_2"
+  },
+  {
+    "words": "Everyone knows that M*A*S*H took place during the Korean War. I just realized that Alan Alda played Hawkeye Pierce, a doctor on the television show M*A*S*H. It's one of my favorite shows so I'm embarrassed that I did not know the lead actor.",
+    "question": "Did I realize that M*A*S*H took place in Asia?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_3"
+  },
+  {
+    "words": "I read fantasy novels every week. I enjoy Terry Pratchett's novels especially. His stories are funny and sarcastic.",
+    "question": "Does Terry Pratchett write fantasy books?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_4"
+  },
+  {
+    "words": "Each week I write at least one response paper. This week I wrote two. One was for psychology and another was for classics.",
+    "question": "Did I write more papers than usual this week?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_5"
+  },
+  {
+    "words": "When I arrived in the parking lot today I saw an expensive red Ferrari. When I left for lunch it was gone.",
+    "question": "Was the Ferrari black?",
+    "correct_answer": "No",
+    "trial_id": "filler_6"
+  },
+  {
+    "words": "After dinner, I listen to Celtic music and read a book. Today I listened to classic rock instead of Celtic music.",
+    "question": "Did I still read a book?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_7"
+  },
+  {
+    "words": "I wear my favorite shirt every week. I make sure to wash some of my clothes each week.  I always wash my shirts before I wear them again.",
+    "question": "Do I wash my favorite shirt every week?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_8"
+  },
+  {
+    "words": "Yesterday I went to a Led Zeppelin concert. I only go to see bands that I really like.  They played for about an hour.",
+    "question": "Do I like Led Zeppelin?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_9"
+  },
+  {
+    "words": "Today the dining hall is serving salmon for dinner. I don't like fish. If I don't like what is being served, I will eat somewhere else.",
+    "question": "Will I eat in the dining hall?",
+    "correct_answer": "No",
+    "trial_id": "filler_10"
+  },
+  {
+    "words": "I turned on my computer today to check my email. I have been waiting to hear from my mother. I had no new email.",
+    "question": "Did my mother write to me?",
+    "correct_answer": "No",
+    "trial_id": "filler_11"
+  },
+  {
+    "words": "Tomorrow I will go to the dentist to have a cavity filled. Everyone knows that flossing prevents cavities, but I haven't flossed enough. I will try to brush my teeth more frequently.",
+    "question": "Does everyone know that brushing teeth prevents cavities?",
+    "correct_answer": "No",
+    "trial_id": "filler_12"
+  },
+  {
+    "words": "Today the United Nations announced in New York City a new plan for world peace. I would like to be a United Nations ambassador for the United States but don't want to travel to Europe. Luckily, the United Nations is based in New York.",
+    "question": "Did I realize that New York City is in the United States?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_13"
+  },
+  {
+    "words": "Because of the nice weather, I put the top down on my convertible. I was afraid of sunburning my head, so I wore a hat.",
+    "question": "Did my head get sunburned?",
+    "correct_answer": "No",
+    "trial_id": "filler_14"
+  },
+  {
+    "words": "Each member of my family uses a Windows PC. I prefer to use an Apple Mac for my laptop. Campus computers use Mac almost exclusively.",
+    "question": "Is it easier to use Mac on campus?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_15"
+  },
+  {
+    "words": "I enjoy driving my car when I am home from school. Motorcycles use less fuel, but they are more dangerous.",
+    "question": "Would I rather be more fuel efficient?",
+    "correct_answer": "No",
+    "trial_id": "filler_16"
+  },
+  {
+    "words": "I got sick with a cold over the weekend. I am still taking decongestants.",
+    "question": "Am I well yet?",
+    "correct_answer": "No",
+    "trial_id": "filler_17"
+  },
+  {
+    "words": "Today I declared a major in Psychology. I am also interested in a minor in Theatre. I cannot do more than one major and minor or two majors.",
+    "question": "Am I also majoring in Philosophy?",
+    "correct_answer": "No",
+    "trial_id": "filler_18"
+  },
+  {
+    "words": "I love to listen to music. I could spend hours just listening to Pink Floyd. The radio doesn't play music I like, so I listen to my iPod.",
+    "question": "Does the radio play Pink Floyd?",
+    "correct_answer": "No",
+    "trial_id": "filler_19"
+  },
+  {
+    "words": "I am a big Star Wars fan. I have seen every movie and read every book. I can't stand it when they make TV shows out of movies.",
+    "question": "Have I seen the Star Wars TV show?",
+    "correct_answer": "No",
+    "trial_id": "filler_20"
+  },
+  {
+    "words": "Neil Patrick Harris is my favorite actor. Harris stars in my favorite TV show. I wish I could meet him.",
+    "question": "Have I acted with Neil Patrick Harris?",
+    "correct_answer": "No",
+    "trial_id": "filler_21"
+  },
+  {
+    "words": "I can't stand fruit-flavored candy. I make exceptions for lemon lollipops and chewy candy, though.",
+    "question": "Do I like cherry gumdrops?",
+    "correct_answer": "No",
+    "trial_id": "filler_22"
+  },
+  {
+    "words": "There was a thunderstorm today. I think that thunderstorms are romantic. My professor became annoyed because he could not speak over the thunder.",
+    "question": "Was I in class during the thunderstorm?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_23"
+  },
+  {
+    "words": "I love to play card games with my friends, and we are going to play Hearts tonight. We always enjoy playing a game on Sunday evening. After a long day of study and rest, cards are the perfect way to relax.",
+    "question": "Is tonight Sunday?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_24"
+  },
+  {
+    "words": "Yesterday, my cat scratched my arm. She is normally quite friendly. I have had her for the last three years.",
+    "question": "Was I surprised that the cat scratched my arm?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_25"
+  },
+  {
+    "words": "This summer I will not have air conditioning in my house. I prefer the weather in Massachusetts, where it is colder. New England weather is always colder in the summer.",
+    "question": "Do I prefer New England weather?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_26"
+  },
+  {
+    "words": "I use Post-It Notes to keep track of my homework. Sometimes I lose them, but the adhesive helps them stick to my notes.",
+    "question": "Do I write my assignments in a notebook?",
+    "correct_answer": "No",
+    "trial_id": "filler_27"
+  },
+  {
+    "words": "My headphones broke yesterday. I will have to buy new ones from the store when it opens tomorrow. I wish stores were open on the weekend.",
+    "question": "Do I have another pair of headphones?",
+    "correct_answer": "No",
+    "trial_id": "filler_28"
+  },
+  {
+    "words": "Over the weekend I saw a play. The student theatre group put it on. If the actors could sing it would sound nicer.",
+    "question": "Is the play a musical?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_29"
+  },
+  {
+    "words": "Each weekend I do my laundry. I have sports practice each week. My uniform gets sweaty and dirty if I wear it only once.",
+    "question": "Do I wash my sports clothes each week?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_30"
+  },
+  {
+    "words": "I have seen a mouse living in my apartment. Yesterday, it ate a bar of chocolate, even though the candy was in a closed plastic container.",
+    "question": "Did the mouse find a way into the plastic container?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_31"
+  },
+  {
+    "words": "Last summer I went to Chicago on vacation. When I was there, I visited the Art Institute and saw a painting by Georges Seurat. It was much bigger than I thought it would be.",
+    "question": "Did the painting conform to my expectations?",
+    "correct_answer": "No",
+    "trial_id": "filler_32"
+  },
+  {
+    "words": "My favorite fruit used to be raspberries. When I was younger, I saw a bug in one of my raspberries, and I haven't eaten one since.",
+    "question": "Do I still enjoy raspberries?",
+    "correct_answer": "No",
+    "trial_id": "filler_33"
+  },
+  {
+    "words": "I went to the movie theater last weekend. The movie I'd planned on seeing was sold out, so I bought tickets for the next available show. To pass the time, I went to the ice cream parlor next door.",
+    "question": "Did I eat ice cream that evening?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_34"
+  },
+  {
+    "words": "My grandparents have a clock that imitates birdcalls. Sometimes, when it strikes the hour, I think there is a rare bird nearby.",
+    "question": "Does the bird clock fool me?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_35"
+  },
+  {
+    "words": "I planned to have a picnic in the park. The weather forecast predicted rain, so I thought I would have to cancel it. However, the day turned out sunny after all.",
+    "question": "Did the weather prevent me from having a picnic?",
+    "correct_answer": "No",
+    "trial_id": "filler_36"
+  },
+  {
+    "words": "I enjoy playing board games with my uncle. The last time we played together, I thought I had won. When we tallied up the scores I discovered that he beat me by one point.",
+    "question": "Did my uncle beat me by a lot of points?",
+    "correct_answer": "No",
+    "trial_id": "filler_37"
+  },
+  {
+    "words": "In the mornings, I go jogging because that is when I can fit it into my schedule. I like exercising then because the weather is cooler than it is during the afternoon. Also, the paths are not very crowded.",
+    "question": "Are there multiple reasons why I prefer to run in the morning?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_38"
+  },
+  {
+    "words": "I have often heard that carrots help you see in the dark. I once ate an entire bag of carrots and then turned the light off. The carrots must have failed, because I couldn't see anything.",
+    "question": "Did eating carrots give me night vision?",
+    "correct_answer": "No",
+    "trial_id": "filler_39"
+  },
+  {
+    "words": "My friend told me that my favorite band was giving a concert in my hometown. I checked their website to see if tickets were still available. I even managed to get a discount.",
+    "question": "Am I planning on going to the concert?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_40"
+  },
+  {
+    "words": "I got my hair cut at a salon in town. I wanted a trim, but the stylist cut it too short. Now my hair looks completely different.",
+    "question": "Was I satisfied with my haircut?",
+    "correct_answer": "No",
+    "trial_id": "filler_41"
+  },
+  {
+    "words": "I was having a party, so I went to the grocery store to buy food. I accidentally dropped a jar of salsa on the floor. It splashed all over the pants I was planning to wear at the party.",
+    "question": "Will I have to change my outfit before the party?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_42"
+  },
+  {
+    "words": "I built a new bookshelf for my bedroom. It was very difficult to do, because I lost the instructions for putting it together. The next day, it fell apart again.",
+    "question": "Was my bookshelf sturdy?",
+    "correct_answer": "No",
+    "trial_id": "filler_43"
+  },
+  {
+    "words": "My hobby is knitting. I have learned to knit really fast, even when I'm thinking of something else. Sometimes, I can knit and read at the same time.",
+    "question": "Does knitting require all of my attention?",
+    "correct_answer": "No",
+    "trial_id": "filler_44"
+  },
+  {
+    "words": "When I was babysitting my cousin, we did an art project. We spread newspaper on the floor so it wouldn't get paint on it. We still got paint on our clothes, though.",
+    "question": "Did the newspaper keep the floor clean?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_45"
+  },
+  {
+    "words": "I recently redecorated my bedroom. I picked out blue paint for my walls. When the paint arrived, I discovered that it was a darker blue than the color I wanted.",
+    "question": "Was I happy with the new color of my walls?",
+    "correct_answer": "No",
+    "trial_id": "filler_46"
+  },
+  {
+    "words": "I planted tomato plants in my backyard. By the time the tomatoes became ripe, wild animals had already eaten most of them.",
+    "question": "Was I able to eat any of the tomatoes I planted?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_47"
+  },
+  {
+    "words": "When I was driving to work, my favorite song came on the radio. I started to sing along really loudly. Afterwards, I realized that my windows had been open and other drivers had been staring at me.",
+    "question": "While the song was on, was I paying attention to my surroundings?",
+    "correct_answer": "No",
+    "trial_id": "filler_48"
+  },
+  {
+    "words": "The weather was so warm that I decided to do my homework outside. I sat beside a fountain that's in the park near my house. Suddenly, a loud noise startled me, and I dropped my textbook in the water.",
+    "question": "Should I have chosen a different place to sit?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_49"
+  },
+  {
+    "words": "On Saturday my friends and I played miniature golf. I played pretty well, but my scores fluctuated a lot. At one hole, my ball got stuck on a windmill, but at the next, I got a hole in one.",
+    "question": "Did my trouble with the windmill cause me to lose the game?",
+    "correct_answer": "No",
+    "trial_id": "filler_50"
+  },
+  {
+    "words": "For my birthday, my family bought me an ice cream cake. The inside of it was mint-chocolate chip, my favorite ice cream flavor. The cake also had my name on the top in blue and green icing.",
+    "question": "Did my family remember my birthday this year?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_51"
+  },
+  {
+    "words": "After my brother's wedding, I helped him address the envelopes to his thank-you notes. When I finished, my hand was sore from all the writing. I was glad I didn't have to write the letters, as well.",
+    "question": "Was my task a tiring one?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_52"
+  },
+  {
+    "words": "I just became vegan, so it's difficult to find restaurants with food I can eat. A few blocks from my house, there's a cafe that only serves vegan food. When my friends want to eat out, I usually suggest we go there.",
+    "question": "Have I found many restaurants with vegan dishes?",
+    "correct_answer": "No",
+    "trial_id": "filler_53"
+  },
+  {
+    "words": "I went to the zoo, but my favorite animals were all asleep. One of the pandas had sprawled out on a rock. I was happy I'd gotten a chance to see it, even though it was sleeping.",
+    "question": "Were any of the animals sitting out in the open?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_54"
+  },
+  {
+    "words": "In the city, I saw a street performer who did magic tricks. She picked me as a volunteer for her act, and asked me to knot ropes around her. I thought I tied them very tightly, but she still managed to escape.",
+    "question": "Did my knots effectively trap the performer?",
+    "correct_answer": "No",
+    "trial_id": "filler_55"
+  },
+  {
+    "words": "I took my little sister to the beach. The water was too cold to swim in, so we played on land instead. We made a sandcastle and then took turns burying each other in the sand.",
+    "question": "Did we get covered with sand during this trip?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_56"
+  },
+  {
+    "words": "When I was driving on the highway, a car nearly crashed into me because it was going too fast. Later on, I noticed the same car on the side of the road. It looked to me like a police officer was giving the driver a ticket.",
+    "question": "Did I get into an accident on the highway?",
+    "correct_answer": "No",
+    "trial_id": "filler_57"
+  },
+  {
+    "words": "I lost my cell phone at a theater. I looked under all the seats around me, but I didn't see it. I couldn't even find it by calling it and listening for the ring, because I had turned it off before the performance.",
+    "question": "Had my phone rung during the show?",
+    "correct_answer": "No",
+    "trial_id": "filler_58"
+  },
+  {
+    "words": "I was swimming laps in my local pool when I noticed something at the bottom. When I dove down, I realized it was a twenty-dollar bill. Nobody claimed it when I asked the people nearby, so I kept it.",
+    "question": "Was I lucky to have noticed the object in the water?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_59"
+  },
+  {
+    "words": "I usually let my cat go outside for a couple hours every night. Last night, I forgot to let him back in until the next morning. The minute I opened the door, he ran inside to his food bowl.",
+    "question": "Did being locked out all night make my cat hungry?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_60"
+  },
+  {
+    "words": "When I talked to my parents yesterday, they told me that they did not pay taxes this year. They have decided that all taxation is theft. I am worried about their decision, since they might go to prison.",
+    "question": "Do my parents always obey the law?",
+    "correct_answer": "No",
+    "trial_id": "filler_61"
+  },
+  {
+    "words": "After I got back from my trip to the equator, I started feeling very ill. My doctor told me I had contracted a rare tropical disease. Luckily, there are drugs which effectively treat it, and I am now healthy.",
+    "question": "Did I see a doctor after I started feeling ill?",
+    "correct_answer": "Yes",
+    "trial_id": "filler_62"
+  },
+  {
+    "words": "My daughter asked me to make brownies for the bake sale at her school. At the sale, my brownies sold out during the first hour. They were so popular that some of the other parents asked me for the recipe.",
+    "question": "Did the people at the bake sale think my brownies were disgusting?",
+    "correct_answer": "No",
+    "trial_id": "filler_63"
+  },
+  {
+    "words": "As the editor of the newspaper, I have to make sure that the paper does not publish anything that is offensive. Unfortunately, a disgruntled writer slipped a racial slur into an article last week. I issued a long apology on the front page of the paper the next day.",
+    "question": "Did the writer ask me before inserting the slur into his article?",
+    "correct_answer": "No",
+    "trial_id": "filler_64"
+  },
+  {
+    "words": "Because of the snow storm, my plane was eight hours late. Though I tried to make the best of my time in the airport, there wasn't much for me to do. I ended up solving crossword puzzles for most of the time.",
+    "question": "Did I use my time in the airport productively?",
+    "correct_answer": "No",
+    "trial_id": "filler_65"
+  }
+]
