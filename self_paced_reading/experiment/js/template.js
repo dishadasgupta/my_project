@@ -1,5 +1,5 @@
 //var condition = "strong"
-
+exp.structure=["bot","i0", "instructions", "one_slider", 'subj_info', 'thanks'];
 var trial_counter = 0;
 
 function shuffle(array) {
@@ -55,6 +55,73 @@ function make_slides(f) {
       exp.go(); //use exp.go() if and only if there is no "present" data.
     }
   });
+
+  slides.bot = slide({
+  name: "bot",
+  start: function () {
+    $('.err_msg').hide();
+    exp.speaker = _.shuffle(["James", "John", "Robert", "Michael", "William", "David", "Richard", "Joseph", "Thomas", "Charles"])[0];
+    exp.listener = _.shuffle(["Mary", "Patricia", "Jennifer", "Linda", "Elizabeth", "Barbara", "Susan", "Jessica", "Sarah", "Margaret"])[0];
+    exp.lives = 0;
+    var story = exp.speaker + ' says to ' + exp.listener + ': "It\'s a beautiful day, isn\'t it?"'
+    var question = 'Who does ' + exp.speaker + ' talk to?';
+    document.getElementById("s").innerHTML = story;
+    document.getElementById("q").innerHTML = question;
+  },
+  button: function () {
+    var textInput = document.getElementById("text_box").value;
+    var listenerLowerCase = exp.listener.toLowerCase();
+    var textInputLowerCase = textInput.toLowerCase();
+
+    exp.data_trials.push({
+      "slide_number_in_experiment": "bot_check",
+      "stim": exp.lives,
+      "response": textInput
+    });
+
+    if ((exp.lives < 3) && (textInputLowerCase === listenerLowerCase)) {
+      exp.go();
+    }
+    else {
+      $('.err_msg').hide();
+      switch (exp.lives) {
+        case 0:
+          $('#err1').show();
+          break;
+        case 1:
+          $('#err2').show();
+          break;
+        case 2:
+          $('#disq').show();
+          $('.button').hide();
+          break;
+        default:
+          break;
+      }
+      exp.lives++;
+    }
+  },
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   slides.trial = slide({
