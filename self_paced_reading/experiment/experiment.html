@@ -43,6 +43,27 @@
 <body onload="init();">
   <noscript>This task requires JavaScript.</noscript>
 
+
+  <div class="slide" id="bot">
+    <h3>Are you a bot?</h3>
+    <p id="s"></p>
+    <p id="q"></p>
+    <input type="text" id="text_box"/>
+    <br><br><br>
+    <div class="err_msg" id="err1">
+      <p2>Failing this question two more times will disqualify you from this study.</p2>
+    </div>
+    <div class="err_msg" id="err2">
+      <p2>Failing this question one more time will disqualify you from this study.</p2>
+    </div>
+    <div class="err_msg" id="disq">
+      <p2>You failed the question and you are disqualified.</p2>
+    </div>
+    <div class="button">
+      <button onclick="_s.button()">Continue</button>
+    </div>
+  </div>
+
   <div class="slide" id="i0" >
     <!-- <img src="../shared/images/cocologo.png" alt="Stanford CoCoLab" id="cocologo"></img> -->
     <!--<p id="cocolab">Stanford Linguistics</p>-->
@@ -64,26 +85,6 @@
 		
     <input type="button" class="button" value="Continue" onclick="exp.go();">
 		
-  </div>
-
-  <div class="slide" id="bot">
-    <h3>Are you a bot?</h3>
-    <p id="s"></p>
-    <p id="q"></p>
-    <input type="text" id="text_box"/>
-    <br><br><br>
-    <div class="err_msg" id="err1">
-      <p2>Failing this question two more times will disqualify you from this study.</p2>
-    </div>
-    <div class="err_msg" id="err2">
-      <p2>Failing this question one more time will disqualify you from this study.</p2>
-    </div>
-    <div class="err_msg" id="disq">
-      <p2>You failed the question and you are disqualified.</p2>
-    </div>
-    <div class="button">
-      <button onclick="_s.button()">Continue</button>
-    </div>
   </div>
 
   <div class="slide" id="trial">

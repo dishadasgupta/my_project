@@ -1,5 +1,5 @@
 //var condition = "strong"
-exp.structure=["bot","i0", "instructions", "one_slider", 'subj_info', 'thanks'];
+
 var trial_counter = 0;
 
 function shuffle(array) {
@@ -42,19 +42,6 @@ function build_trials() {
 
 function make_slides(f) {
   var   slides = {};
-  slides.i0 = slide({
-     name : "i0",
-     start: function() {
-      exp.startT = Date.now();
-     }
-  });
-
-  slides.instructions = slide({
-    name : "instructions",
-    button : function() {
-      exp.go(); //use exp.go() if and only if there is no "present" data.
-    }
-  });
 
   slides.bot = slide({
   name: "bot",
@@ -103,26 +90,19 @@ function make_slides(f) {
   },
   });
 
+  slides.i0 = slide({
+     name : "i0",
+     start: function() {
+      exp.startT = Date.now();
+     }
+  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  slides.instructions = slide({
+    name : "instructions",
+    button : function() {
+      exp.go(); //use exp.go() if and only if there is no "present" data.
+    }
+  });
 
   slides.trial = slide({
     name: "trial",
@@ -250,7 +230,8 @@ function init() {
       screenUW: exp.width
     };
   //blocks of the experiment:
-  exp.structure=["i0",  "instructions", "trial", 'subj_info', 'thanks'];
+  //exp.structure=["i0",  "instructions", "trial", 'subj_info', 'thanks'];
+  exp.structure=["bot","i0", "instructions", "trial", 'subj_info', 'thanks'];
 
   exp.data_trials = [];
   //make corresponding slides:
