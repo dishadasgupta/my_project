@@ -1,0 +1,70 @@
+---
+title: "Final Replication Study - Disha Dasgupta"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(lme4)
+library(stringr)
+```
+
+#To-Do
+###Calculate comprehension accuracy 
+Strip outlier RTs
+Check overlap between datasets
+New column for scalar vs trigger type
+Create visualization plots
+
+#To-Ask
+Check code meaning for 'items' and 'participants'
+
+```{r}
+#Read in all trial data sources 
+dataPilot <- read_csv('example-trials-pilot.csv')
+data1 <- read_csv('example-trials-1.csv')
+data2 <- read_csv('example-trials-2.csv')
+```
+
+```{r}
+#Full data set
+fullData <- rbind(dataPilot, data1, data2) %>%
+  subset(is.na(response)) 
+fullData['rt'] <- log(fullData['rt'])
+
+fullData <- fullData[fullData$rt >= 0.0,]
+```
+
+```{r}
+#Split into data groups 
+filler <- fullData %>%
+  filter(str_detect(trial_id, "filler_"))
+
+#Actual stimuli
+stimuli <- fullData[!(fullData$trial_id %in% filler$trial_id),]
+```
+
+```{r}
+#Trial condition, knowledge level, and trigger type
+stimuli$condition <- str_sub(stimuli$trial_id,-2,-1)
+
+full_knowledge <- c("cs", "ls", "as")
+stimuli$knowledge <- ifelse(stimuli$condition %in% full_knowledge,1,0) 
+
+focus_triggers <- stimuli[stimuli$word == "Only",]
+
+```
+
+```{r}
+#Accuracy of comprehension questions
+sum(stimuli$response_correct)/nrow(stimuli)
+```
+
+```{r}
+#Linear mixed effect regression
+mixed.lmer <- lmer(rt ~ knowledge + (1|workerid) + (1|trial_no), data = stimuli)
+summary(mixed.lmer)
+```
+
