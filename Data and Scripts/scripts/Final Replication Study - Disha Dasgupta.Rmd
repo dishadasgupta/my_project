@@ -1,0 +1,265 @@
+---
+title: "Final Replication Study - Disha Dasgupta"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(languageR)
+library(lme4)
+library(MuMIn)
+library(stringr)
+library(lmerTest)
+library(viridis)
+library(ggsci)
+theme_set(theme_classic())
+```
+
+### Data Cleaning
+
+```{r message=FALSE}
+#Read in all trial data sources 
+dataPilot <- read_csv('example-trials-pilot.csv')
+data1 <- read_csv('example-trials-1.csv')
+data2 <- read_csv('example-trials-2.csv')
+
+data1$workerid <- data1$workerid + 2
+data2$workerid <- data2$workerid + 20
+```
+
+```{r}
+#Full data set
+fullData <- rbind(dataPilot, data1, data2) %>%
+  subset(is.na(response))
+```
+
+```{r}
+#Split into data groups 
+filler <- fullData %>%
+  filter(str_detect(trial_id, "filler_"))
+
+#Actual stimuli
+stimuli <- fullData[!(fullData$trial_id %in% filler$trial_id),]
+stimuli$word_idx <- stimuli$word_idx + 1
+```
+
+```{r}
+#Log transform RTs
+stimuli$rt <- log(stimuli$rt)
+stimuli <- stimuli[is.finite(stimuli$rt) == TRUE,]
+```
+
+```{r}
+#Trial item, condition, knowledge level, and trigger type
+stimuli$item <- as.factor(substr(stimuli$trial_id,1,nchar(stimuli$trial_id)-3))
+
+stimuli$condition <- str_sub(stimuli$trial_id,-2,-1)
+
+full_knowledge <- c("cs", "ls", "as")
+stimuli$Knowledge <- as.factor(ifelse(stimuli$condition %in% full_knowledge,"Full","Partial"))
+
+focus_triggers <- stimuli[stimuli$word == "Only",]
+focused <- merge(stimuli, focus_triggers, by=c("workerid", "trial_no"))
+
+stimuli$trigger <- as.factor(ifelse(is.na(match(paste0(stimuli$workerid, stimuli$trial_no), paste0(focused$workerid, focused$trial_no))),"scalar", "focused"))
+
+stimuli$workerid <- as.factor(stimuli$workerid)
+```
+
+```{r}
+#Capitalization used to determine sentences - thus, lower case everything not at the beginning
+#of a sentence
+
+toLower <- c("Europe.", "Spanish", "Disney", "World,", "Chardonnay", "PTA")
+
+for (i in 1:nrow(stimuli)) {
+  if(stimuli$word[i] %in% toLower) {
+    stimuli$word[i] <- tolower(stimuli$word[i])
+  }
+}
+```
+
+```{r}
+#Determine knowledge, trigger, or continuation sentence
+
+startVal <- 1
+stimuli$sentence <- NA
+
+for (i in 1:nrow(stimuli)) {
+  
+  if (startVal %% 3 == 1) {
+    stimuli$sentence[i] <- "knowledge"
+  }
+  else if (startVal %% 3 == 2) {
+    stimuli$sentence[i] <- "trigger"
+  }
+  else if (startVal %% 3 == 0) {
+    stimuli$sentence[i] <- "continuation"
+  }
+  
+  if (i != 1 | i != nrow(stimuli)) {
+    
+    if(endsWith(stimuli$word[i], ".") | grepl("^[A-Z][a-z]+", stimuli[i+1,]$word) ) {
+      
+      startVal <- startVal + 1
+    }
+  }
+}
+```
+
+```{r}
+#Trigger sentence regions
+triggerSentences <- subset(stimuli, stimuli$sentence =="trigger") 
+triggerSentences$region <- NA
+
+for (i in 1:nrow(triggerSentences)) {
+  
+  if (tolower(triggerSentences$word[i]) == "some"  & triggerSentences$word[i+1] == "of") {
+    triggerSentences$region[i] <- "Quantifier"
+    triggerSentences$region[i+1] <- "Quantifier"
+    triggerSentences$region[i+2] <- "Spillover"
+    triggerSentences$region[i+3] <- "Spillover"
+    triggerSentences$region[i+4] <- "Trigger following"
+    triggerSentences$region[i+5] <- "Trigger following"
+  }
+  
+  if ((triggerSentences$word[i]) == "Only") {
+    triggerSentences$region[i] <- "Focus"
+    
+  }
+}
+
+triggerQuantifier <- subset(triggerSentences, triggerSentences$region == "Quantifier")
+triggerSpillover <- subset(triggerSentences, triggerSentences$region == "Spillover")
+```
+
+```{r}
+#Continuation sentence regions
+continuationSentences <- subset(stimuli, stimuli$sentence == "continuation")
+continuationSentences$region <- NA
+
+for (i in 1:nrow(continuationSentences)) {
+  
+  if (continuationSentences$word[i] == "The" & continuationSentences$word[i+1] == "rest") {
+    continuationSentences$region[i] <- "Anaphor"
+    continuationSentences$region[i+1] <- "Anaphor"
+    continuationSentences$region[i+2] <- "Predicate"
+    continuationSentences$region[i+3] <- "Predicate"
+    continuationSentences$region[i+4] <- "Spillover Boundary"
+    continuationSentences$region[i+5] <- "Spillover Boundary"
+    continuationSentences$region[i+6] <- "Two Words Following"
+    continuationSentences$region[i+7] <- "Two Words Following"
+    
+  }
+  
+}
+
+compAnaphor <- subset(continuationSentences, continuationSentences$region == "Anaphor") 
+compPredicate <- subset(continuationSentences, continuationSentences$region == "Predicate") 
+```
+
+```{r}
+#Center predictors
+triggerQuantifier$cKnowledge <- as.numeric(triggerQuantifier$Knowledge) - mean(as.numeric(triggerQuantifier$Knowledge))
+triggerQuantifier$ctrigger <- as.numeric(triggerQuantifier$trigger) - mean(as.numeric(triggerQuantifier$trigger))
+
+triggerSpillover$cKnowledge <- as.numeric(triggerSpillover$Knowledge) - mean(as.numeric(triggerSpillover$Knowledge))
+triggerSpillover$ctrigger <- as.numeric(triggerSpillover$trigger) - mean(as.numeric(triggerSpillover$trigger))
+
+compAnaphor$cKnowledge <- as.numeric(compAnaphor$Knowledge) - mean(as.numeric(compAnaphor$Knowledge))
+compAnaphor$ctrigger <- as.numeric(compAnaphor$trigger) - mean(as.numeric(compAnaphor$trigger))
+
+compPredicate$cKnowledge <- as.numeric(compPredicate$Knowledge) - mean(as.numeric(compPredicate$Knowledge))
+compPredicate$ctrigger <- as.numeric(compPredicate$trigger) - mean(as.numeric(compPredicate$trigger))
+```
+
+
+### Preliminary Analyses
+
+```{r}
+#Accuracy of comprehension questions
+sum(stimuli$response_correct)/nrow(stimuli)
+```
+
+
+### Trigger Quantifier Model
+
+```{r}
+TQ_full <- lmerTest::lmer(rt ~ cKnowledge * ctrigger + (1|workerid) + (1|item), data = triggerQuantifier, REML = F)
+summary(TQ_full)
+```
+
+### Trigger Spillover Model
+
+```{r}
+TS_full <- lmerTest::lmer(rt ~ cKnowledge * ctrigger + (1+cKnowledge*ctrigger|workerid) + (1+ctrigger|item), data = triggerSpillover, REML = F)
+summary(TS_full)
+```
+
+### Complement Anaphor Model
+
+```{r}
+CA_full <- lmerTest::lmer(rt ~ cKnowledge * ctrigger + (1|workerid) + (1|item), data = compAnaphor, REML = F)
+summary(CA_full)
+```
+
+### Complement Predicate Model
+
+```{r}
+CP_full <- lmerTest::lmer(rt ~ cKnowledge * ctrigger + (1+cKnowledge*ctrigger|workerid) + (1+cKnowledge+ctrigger|item), data = compAnaphor, REML = F)
+summary(CP_full)
+```
+
+
+### Visualization
+
+```{r}
+#Revert log transformed RTs
+stimuli$rt <- exp(stimuli$rt)
+triggerSentences$rt <- exp(triggerSentences$rt)
+continuationSentences$rt <- exp(continuationSentences$rt)
+```
+
+
+```{r}
+#Data for Plots
+compScalar <- continuationSentences %>%
+  group_by(region, Knowledge, trigger) %>%
+  summarise(avg = mean(rt)) %>%
+  subset(trigger == "scalar") %>%
+  filter(!str_detect(region, "cancel"))
+
+compFocused <- continuationSentences %>%
+  group_by(region, Knowledge, trigger) %>%
+  summarise(avg = mean(rt)) %>%
+  subset(trigger == "focused") %>%
+  filter(!str_detect(region, "cancel"))
+
+triggerFocused <- triggerSentences %>%
+  group_by(region, Knowledge, trigger) %>%
+  summarise(avg = mean(rt)) %>%
+  subset(trigger == "focused") %>%
+  subset(!is.na(region))
+
+triggerScalar <- triggerSentences %>%
+  group_by(region, Knowledge, trigger) %>%
+  summarise(avg = mean(rt)) %>%
+  subset(trigger == "scalar") %>%
+  subset(!is.na(region))
+```
+
+
+```{r}
+se <- function(x) sd(x)/sqrt(length(x))
+
+#Plots
+ggplot(compScalar, aes(factor(region), avg,  group = Knowledge, color = Knowledge)) + geom_point(size = 2) + geom_line(size = 1) + scale_color_nejm() + geom_errorbar(aes(ymin=avg-se(avg), ymax=avg+se(avg)), alpha = 0.42, width=0.05) + xlab("Region") + ylab("RTs (ms per word)") + ggtitle("Scalar Trigger")
+
+ggplot(compFocused, aes(factor(region), avg,  group = Knowledge, color = Knowledge)) + geom_point(size = 2) + geom_line(size = 1) + scale_color_nejm() + geom_errorbar(aes(ymin=avg-se(avg), ymax=avg+se(avg)), alpha = 0.42, width=0.05) + xlab("Region") + ylab("RTs (ms per word)") + ggtitle("Focused Trigger") 
+
+ggplot(triggerScalar, aes(factor(region), avg,  group = Knowledge, color = Knowledge)) + geom_point(size = 2) + geom_line(size = 1) + scale_color_nejm() + geom_errorbar(aes(ymin=avg-se(avg), ymax=avg+se(avg)), alpha = 0.42, width=0.05) + xlab("Region") + ylab("RTs (ms per word)") + ggtitle("Scalar Trigger") 
+
+ggplot(triggerFocused, aes(factor(region), avg,  group = Knowledge, color = Knowledge)) + geom_point(size = 2) + geom_line(size = 1) + scale_color_nejm() + geom_errorbar(aes(ymin=avg-se(avg), ymax=avg+se(avg)), alpha = 0.42, width=0.05) + xlab("Region") + ylab("RTs (ms per word)") + ggtitle("Focused Trigger") 
+``` 
